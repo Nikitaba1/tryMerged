@@ -17,7 +17,7 @@ public class ForkTest {
     
     @Test 
     public void secondTest() {
-    	driver = new ChromeDriver();
+    driver = new ChromeDriver();
     driver.get("https://demowebshop.tricentis.com/");
     Reporter.log("DemoWebshop got opened",true);
     driver.quit();
