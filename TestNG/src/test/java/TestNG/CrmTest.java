@@ -13,15 +13,15 @@ public class CrmTest {
 	@Test
 	public void crmcontactTest() throws Exception {
 		File_Utility fu = new File_Utility();
-		String Browser = fu.readDataFromPropertyFile("browser");
+		String Browser = System.getProperty("Browser");
 		if(Browser.equalsIgnoreCase("chrome")) {
 			driver= new ChromeDriver();
 		}else {
 			driver = new EdgeDriver();
 		}
-		String URL = fu.readDataFromPropertyFile("url");
-		String UN = fu.readDataFromPropertyFile("username");
-		String PW = fu.readDataFromPropertyFile("password");
+		String URL = System.getProperty("url");
+		String UN = System.getProperty("username");
+		String PW = System.getProperty("password");
 		driver.get(URL);
 		driver.findElement(By.name("user_name")).sendKeys(UN);
 		driver.findElement(By.name("user_password")).sendKeys(PW);
