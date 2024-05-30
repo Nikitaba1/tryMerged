@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ForkTest {
 	WebDriver driver;
-    @Test
+    @Test(groups = "Regresion")
     public void Execute() {
     	driver = new ChromeDriver();
     	driver.get("https://www.purplle.com/");
@@ -15,7 +15,7 @@ public class ForkTest {
     	driver.quit();
     }
     
-    @Test 
+    @Test(groups = "Regresion") 
     public void secondTest() {
     driver = new ChromeDriver();
     driver.get("https://demowebshop.tricentis.com/");

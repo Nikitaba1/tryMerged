@@ -10,7 +10,7 @@ import fileUtility.File_Utility;
 
 public class CrmTest {
 	WebDriver driver;
-	@Test
+	@Test(groups = "Regresion")
 	public void crmcontactTest() throws Exception {
 		File_Utility fu = new File_Utility();
 		String Browser = System.getProperty("Browser");
