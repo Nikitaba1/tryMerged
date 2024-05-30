@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class ToCreateMergeRequestTest {
 
-	@Test
+	@Test(groups = "smoke")
 	public void amazonTest() {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.amazon.in/");

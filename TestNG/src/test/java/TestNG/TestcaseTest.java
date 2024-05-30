@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 public class TestcaseTest {
-	@Test
+	@Test(groups = "smoke")
 	public void flipkarttest()
 	{
 		WebDriver driver = new ChromeDriver();
